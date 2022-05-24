@@ -24,39 +24,69 @@ Control DUT (
 	.Sh(Sh),
 	.St(St)
 );
-initial 
-begin 
+
+integer i,j,k;
+
+initial begin
+	forever #1 Clk = ~Clk;
+end
+
+initial begin
+	#6;
+	K = ~K;
+	#2;
+	K = ~K;
+	#12;
+	K = ~K;
+	#2;
+	K = ~K;
+	#5;
+	K = ~K;
+	for(i=0;i<18;i=i+1) begin
+		#2;
+		K = ~K;
+	end
+end 
+
+initial begin
+	#4;
+	M = ~M;
+	#2;
+	M = ~M;
+	#12;
+	M = ~M;
+	#2;
+	M = ~M;
+	#9;
+	M = ~M;
+	for(j=0;j<8;j=j+1) begin
+		#4;
+		M = ~M;
+	end
+end 
+
+initial begin
+	#2;
+	St = ~St;
+	#2;
+	St = ~St;
+	#8;
+	St = ~St;
+	#2;
+	St = ~St;
+	#19;
+	St = ~St;
+	for(k=0;k<3;k=k+1) begin
+		#8;
+		St = ~St;
+	end
+end 
+
+initial begin 
 	Clk = 1'b0;
 	K = 1'b0;
 	M = 1'b0;
 	St = 1'b0;
-	#32000 $stop;
-end 
-
-
-always
-begin
-	Clk = ~Clk;
-	#1000;
-end 
-
-
-always
-begin
-	K = ~K;
-	#2000;
-end 
-
-always
-begin
-	M = ~M;
-	#4000;
-end 
-
-
-always
-begin
-	St = ~St;
-	#8000;
+	#64 $stop;
 end 
 endmodule
