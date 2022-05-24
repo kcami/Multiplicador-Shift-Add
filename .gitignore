@@ -12,7 +12,7 @@
 
 # ignore Quartus II generated folders
 *_sim
-*\db
+db
 greybox_tmp
 incremental_db
 simulation
