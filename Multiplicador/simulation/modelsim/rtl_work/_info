@@ -7,140 +7,140 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dD:/Multiplicador/simulation/modelsim
+Z0 dD:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/simulation/modelsim
 vACC
-Z1 !s110 1653343887
+Z1 !s110 1653403104
 !i10b 1
 !s100 HI_kPPD1f^o`KEmM1f>Q[0
-IBcQ4:7mhi7VNH;MzNVn?51
+I]k`@41:7k>1NM;=;z0m`M1
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
 w1653053588
-8D:/Multiplicador/ACC/ACC.v
-FD:/Multiplicador/ACC/ACC.v
+8D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/ACC/ACC.v
+FD:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/ACC/ACC.v
 L0 1
 Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1653343887.000000
-!s107 D:/Multiplicador/ACC/ACC.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Multiplicador/ACC|D:/Multiplicador/ACC/ACC.v|
+Z4 !s108 1653403104.000000
+!s107 D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/ACC/ACC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/ACC|D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/ACC/ACC.v|
 !i113 1
 Z5 o-vlog01compat -work work
-!s92 -vlog01compat -work work +incdir+D:/Multiplicador/ACC
+!s92 -vlog01compat -work work +incdir+D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/ACC
 Z6 tCvgOpt 0
 n@a@c@c
 vAdder
 R1
 !i10b 1
 !s100 J6@@9l]<llR9@QnhEgiKU3
-IC7:4nBid5Ll>1d1TSPmYE1
+I8P=V6DaW6Y4Q3n32kBXNK1
 R2
 R0
 w1651174107
-8D:/Multiplicador/Adder/Adder.v
-FD:/Multiplicador/Adder/Adder.v
-L0 1
-R3
-r1
-!s85 0
-31
-Z7 !s108 1653343886.000000
-!s107 D:/Multiplicador/Adder/Adder.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Multiplicador/Adder|D:/Multiplicador/Adder/Adder.v|
-!i113 1
-R5
-!s92 -vlog01compat -work work +incdir+D:/Multiplicador/Adder
-R6
-n@adder
-vControl
-Z8 !s110 1653343886
-!i10b 1
-!s100 @:JZPR<k_7NaENA@<kY:f0
-I3;57@Mf<JlbN:[=@OJVlh1
-R2
-R0
-w1653053989
-8D:/Multiplicador/Control/Control.v
-FD:/Multiplicador/Control/Control.v
-L0 1
-R3
-r1
-!s85 0
-31
-R7
-!s107 D:/Multiplicador/Control/Control.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Multiplicador/Control|D:/Multiplicador/Control/Control.v|
-!i113 1
-R5
-!s92 -vlog01compat -work work +incdir+D:/Multiplicador/Control
-R6
-n@control
-vCounter
-R8
-!i10b 1
-!s100 P6QGYLU6Y@QVA1n@G2ZcK3
-Ig7cGX8A<:_Te?i7^^YgQB3
-R2
-R0
-w1653073508
-8D:/Multiplicador/Counter/Counter.v
-FD:/Multiplicador/Counter/Counter.v
-L0 1
-R3
-r1
-!s85 0
-31
-R7
-!s107 D:/Multiplicador/Counter/Counter.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Multiplicador/Counter|D:/Multiplicador/Counter/Counter.v|
-!i113 1
-R5
-!s92 -vlog01compat -work work +incdir+D:/Multiplicador/Counter
-R6
-n@counter
-vMultiplicador
-Z9 !s110 1653343888
-!i10b 1
-!s100 K]PXzmXOf[XS[<W>MQjP62
-IldE_QN4bh3lFXMjTPN=aY2
-R2
-R0
-w1653342769
-8D:/Multiplicador/Multiplicador.v
-FD:/Multiplicador/Multiplicador.v
+8D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Adder/Adder.v
+FD:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Adder/Adder.v
 L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 D:/Multiplicador/Multiplicador.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Multiplicador|D:/Multiplicador/Multiplicador.v|
+!s107 D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Adder/Adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Adder|D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Adder/Adder.v|
 !i113 1
 R5
-Z10 !s92 -vlog01compat -work work +incdir+D:/Multiplicador
+!s92 -vlog01compat -work work +incdir+D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Adder
+R6
+n@adder
+vControl
+Z7 !s110 1653403103
+!i10b 1
+!s100 J1NPiTb0W?k;]FTO7IQE00
+Ike;NcPjoBX3];TkZhCD@^0
+R2
+R0
+w1653348015
+8D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Control/Control.v
+FD:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Control/Control.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z8 !s108 1653403103.000000
+!s107 D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Control/Control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Control|D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Control/Control.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Control
+R6
+n@control
+vCounter
+R7
+!i10b 1
+!s100 SEXd?<_jQ=Z1aImFLYE^c1
+ILM13XoUjd@c@Q;2j6Bmd90
+R2
+R0
+w1653347897
+8D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Counter/Counter.v
+FD:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Counter/Counter.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Counter/Counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Counter|D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Counter/Counter.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Counter
+R6
+n@counter
+vMultiplicador
+Z9 !s110 1653403105
+!i10b 1
+!s100 >`0CQbkn9@XCAYYRYVB_]0
+I8TYiAIM@R0S5b^X6<]nHn2
+R2
+R0
+w1653347872
+8D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Multiplicador.v
+FD:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Multiplicador.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Multiplicador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador|D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Multiplicador.v|
+!i113 1
+R5
+Z10 !s92 -vlog01compat -work work +incdir+D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador
 R6
 n@multiplicador
 vMultiplicador_TB
 R9
 !i10b 1
-!s100 Eo?j3c5?HV[lz5577Rmz]1
-IWm?9Qn3VPAL`;iJO;OnVB3
+!s100 ^8CLWI=VTgkn37QgIMjT>3
+IS?cP8h6RC12BOYXPkhmzb3
 R2
 R0
-w1653343670
-8D:/Multiplicador/Multiplicador_TB.v
-FD:/Multiplicador/Multiplicador_TB.v
+w1653400393
+8D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Multiplicador_TB.v
+FD:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Multiplicador_TB.v
 L0 2
 R3
 r1
 !s85 0
 31
-!s108 1653343888.000000
-!s107 D:/Multiplicador/Multiplicador_TB.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Multiplicador|D:/Multiplicador/Multiplicador_TB.v|
+!s108 1653403105.000000
+!s107 D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Multiplicador_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador|D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Multiplicador_TB.v|
 !i113 1
 R5
 R10

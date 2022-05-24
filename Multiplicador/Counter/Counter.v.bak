@@ -1,7 +1,0 @@
-module Counter (
-	input Load,
-	input reg Clk,
-	output k
-);
-
-endmodule

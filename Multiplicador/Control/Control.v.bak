@@ -1,7 +1,0 @@
-module Control (
-	input reg Clk,
-	input St, M, k,
-	output Idle, Done, Load, Sh, Ad
-);
-
-endmodule

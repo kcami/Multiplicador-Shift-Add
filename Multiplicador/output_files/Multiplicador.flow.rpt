@@ -1,5 +1,5 @@
 Flow report for Multiplicador
-Mon May 23 20:56:26 2022
+Tue May 24 11:36:57 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon May 23 20:56:26 2022       ;
+; Flow Status                        ; Successful - Tue May 24 11:36:57 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Multiplicador                               ;
 ; Top-level Entity Name              ; Multiplicador                               ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/23/2022 20:53:15 ;
+; Start date & time ; 05/24/2022 11:35:27 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Multiplicador       ;
 +-------------------+---------------------+
@@ -77,10 +77,9 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id       ;
 +--------------------------------------+----------------------------------------+---------------+-------------+------------------+
-; COMPILER_SIGNATURE_ID                ; 62580489088565.165334999314268         ; --            ; --          ; --               ;
+; COMPILER_SIGNATURE_ID                ; 62580489088565.165340292519316         ; --            ; --          ; --               ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; Multiplicador_TB ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; Multiplicador_TB                       ; --            ; --          ; eda_simulation   ;
-; EDA_NETLIST_WRITER_OUTPUT_DIR        ; D:\Multiplicador                       ; --            ; --          ; eda_simulation   ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation   ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --               ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation   ;
@@ -104,12 +103,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:58     ; 1.0                     ; 4744 MB             ; 00:01:30                           ;
-; Fitter               ; 00:01:16     ; 1.0                     ; 5338 MB             ; 00:01:01                           ;
-; Assembler            ; 00:00:23     ; 1.0                     ; 4679 MB             ; 00:00:15                           ;
-; Timing Analyzer      ; 00:00:17     ; 1.0                     ; 4799 MB             ; 00:00:14                           ;
-; EDA Netlist Writer   ; 00:00:06     ; 1.0                     ; 4642 MB             ; 00:00:06                           ;
-; Total                ; 00:03:00     ; --                      ; --                  ; 00:03:06                           ;
+; Analysis & Synthesis ; 00:00:40     ; 1.0                     ; 4745 MB             ; 00:01:20                           ;
+; Fitter               ; 00:00:27     ; 1.0                     ; 5365 MB             ; 00:00:34                           ;
+; Assembler            ; 00:00:07     ; 1.0                     ; 4678 MB             ; 00:00:07                           ;
+; Timing Analyzer      ; 00:00:08     ; 1.0                     ; 4791 MB             ; 00:00:08                           ;
+; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4642 MB             ; 00:00:03                           ;
+; Total                ; 00:01:25     ; --                      ; --                  ; 00:02:12                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
