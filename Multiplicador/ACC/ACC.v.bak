@@ -1,0 +1,6 @@
+module ACC (
+	input Load, Sh, Ad, Clk, Entradas[8:0],
+	output Saidas[8:0]
+);
+
+endmodule
