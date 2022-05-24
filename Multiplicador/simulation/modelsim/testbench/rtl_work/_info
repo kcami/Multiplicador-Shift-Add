@@ -1,0 +1,125 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Multiplicador/simulation/modelsim/testbench
+vACC
+Z1 !s110 1653344886
+!i10b 1
+!s100 HI_kPPD1f^o`KEmM1f>Q[0
+IBcQ4:7mhi7VNH;MzNVn?51
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1653053588
+8D:/Multiplicador/ACC/ACC.v
+FD:/Multiplicador/ACC/ACC.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1653344886.000000
+!s107 D:/Multiplicador/ACC/ACC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Multiplicador/ACC|D:/Multiplicador/ACC/ACC.v|
+!i113 1
+Z4 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+D:/Multiplicador/ACC
+Z5 tCvgOpt 0
+n@a@c@c
+vAdder
+R1
+!i10b 1
+!s100 J6@@9l]<llR9@QnhEgiKU3
+IC7:4nBid5Ll>1d1TSPmYE1
+R2
+R0
+w1651174107
+8D:/Multiplicador/Adder/Adder.v
+FD:/Multiplicador/Adder/Adder.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z6 !s108 1653344885.000000
+!s107 D:/Multiplicador/Adder/Adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Multiplicador/Adder|D:/Multiplicador/Adder/Adder.v|
+!i113 1
+R4
+!s92 -vlog01compat -work work +incdir+D:/Multiplicador/Adder
+R5
+n@adder
+vControl
+!s110 1653344885
+!i10b 1
+!s100 @:JZPR<k_7NaENA@<kY:f0
+I3;57@Mf<JlbN:[=@OJVlh1
+R2
+R0
+w1653053989
+8D:/Multiplicador/Control/Control.v
+FD:/Multiplicador/Control/Control.v
+L0 1
+R3
+r1
+!s85 0
+31
+R6
+!s107 D:/Multiplicador/Control/Control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Multiplicador/Control|D:/Multiplicador/Control/Control.v|
+!i113 1
+R4
+!s92 -vlog01compat -work work +incdir+D:/Multiplicador/Control
+R5
+n@control
+vCounter
+!s110 1653344884
+!i10b 1
+!s100 P6QGYLU6Y@QVA1n@G2ZcK3
+Ig7cGX8A<:_Te?i7^^YgQB3
+R2
+R0
+w1653073508
+8D:/Multiplicador/Counter/Counter.v
+FD:/Multiplicador/Counter/Counter.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1653344884.000000
+!s107 D:/Multiplicador/Counter/Counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Multiplicador/Counter|D:/Multiplicador/Counter/Counter.v|
+!i113 1
+R4
+!s92 -vlog01compat -work work +incdir+D:/Multiplicador/Counter
+R5
+n@counter
+vMultiplicador
+!s110 1653344887
+!i10b 1
+!s100 K]PXzmXOf[XS[<W>MQjP62
+IldE_QN4bh3lFXMjTPN=aY2
+R2
+R0
+w1653342769
+8D:/Multiplicador/Multiplicador.v
+FD:/Multiplicador/Multiplicador.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1653344887.000000
+!s107 D:/Multiplicador/Multiplicador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Multiplicador|D:/Multiplicador/Multiplicador.v|
+!i113 1
+R4
+!s92 -vlog01compat -work work +incdir+D:/Multiplicador
+R5
+n@multiplicador

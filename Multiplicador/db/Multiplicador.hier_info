@@ -1,0 +1,119 @@
+|Multiplicador
+St => St.IN1
+Clk => Clk.IN3
+Multiplicando[0] => Multiplicando[0].IN1
+Multiplicando[1] => Multiplicando[1].IN1
+Multiplicando[2] => Multiplicando[2].IN1
+Multiplicando[3] => Multiplicando[3].IN1
+OperandoMultiplicador[0] => OperandoMultiplicador[0].IN1
+OperandoMultiplicador[1] => OperandoMultiplicador[1].IN1
+OperandoMultiplicador[2] => OperandoMultiplicador[2].IN1
+OperandoMultiplicador[3] => OperandoMultiplicador[3].IN1
+Idle << Control:CON0.Idle
+Done << Control:CON0.Done
+Produto[0] << Produto[0].DB_MAX_OUTPUT_PORT_TYPE
+Produto[1] << ACC:ACC0.Saidas
+Produto[2] << ACC:ACC0.Saidas
+Produto[3] << ACC:ACC0.Saidas
+Produto[4] << Produto[4].DB_MAX_OUTPUT_PORT_TYPE
+Produto[5] << Produto[5].DB_MAX_OUTPUT_PORT_TYPE
+Produto[6] << Produto[6].DB_MAX_OUTPUT_PORT_TYPE
+Produto[7] << Produto[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Multiplicador|ACC:ACC0
+Saidas[0] <= Saidas[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Saidas[1] <= Saidas[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Saidas[2] <= Saidas[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Saidas[3] <= Saidas[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Saidas[4] <= Saidas[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Saidas[5] <= Saidas[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Saidas[6] <= Saidas[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Saidas[7] <= Saidas[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Saidas[8] <= Saidas[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Load => Saidas.OUTPUTSELECT
+Load => Saidas.OUTPUTSELECT
+Load => Saidas.OUTPUTSELECT
+Load => Saidas.OUTPUTSELECT
+Load => Saidas.OUTPUTSELECT
+Load => Saidas.OUTPUTSELECT
+Load => Saidas.OUTPUTSELECT
+Load => Saidas.OUTPUTSELECT
+Load => Saidas.OUTPUTSELECT
+Sh => Saidas.OUTPUTSELECT
+Sh => Saidas.OUTPUTSELECT
+Sh => Saidas.OUTPUTSELECT
+Sh => Saidas.OUTPUTSELECT
+Sh => Saidas.OUTPUTSELECT
+Sh => Saidas.OUTPUTSELECT
+Sh => Saidas.OUTPUTSELECT
+Sh => Saidas.OUTPUTSELECT
+Sh => Saidas.OUTPUTSELECT
+Ad => Saidas.OUTPUTSELECT
+Ad => Saidas.OUTPUTSELECT
+Ad => Saidas.OUTPUTSELECT
+Ad => Saidas.OUTPUTSELECT
+Ad => Saidas.OUTPUTSELECT
+Clk => Saidas[0]~reg0.CLK
+Clk => Saidas[1]~reg0.CLK
+Clk => Saidas[2]~reg0.CLK
+Clk => Saidas[3]~reg0.CLK
+Clk => Saidas[4]~reg0.CLK
+Clk => Saidas[5]~reg0.CLK
+Clk => Saidas[6]~reg0.CLK
+Clk => Saidas[7]~reg0.CLK
+Clk => Saidas[8]~reg0.CLK
+Entradas[0] => Saidas.DATAB
+Entradas[1] => Saidas.DATAB
+Entradas[2] => Saidas.DATAB
+Entradas[3] => Saidas.DATAB
+Entradas[4] => Saidas.DATAB
+Entradas[5] => Saidas.DATAB
+Entradas[6] => Saidas.DATAB
+Entradas[7] => Saidas.DATAB
+Entradas[8] => Saidas.DATAB
+
+
+|Multiplicador|Adder:ADD0
+Soma[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+Soma[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+Soma[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+Soma[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+Soma[4] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+OperandoA[0] => Add0.IN4
+OperandoA[1] => Add0.IN3
+OperandoA[2] => Add0.IN2
+OperandoA[3] => Add0.IN1
+OperandoB[0] => Add0.IN8
+OperandoB[1] => Add0.IN7
+OperandoB[2] => Add0.IN6
+OperandoB[3] => Add0.IN5
+
+
+|Multiplicador|Counter:COUNT0
+Load => n.OUTPUTSELECT
+Load => n.OUTPUTSELECT
+Load => n.OUTPUTSELECT
+Load => n.OUTPUTSELECT
+Clk => n[0].CLK
+Clk => n[1].CLK
+Clk => n[2].CLK
+Clk => n[3].CLK
+K <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Multiplicador|Control:CON0
+Idle <= Idle.DB_MAX_OUTPUT_PORT_TYPE
+Done <= Done.DB_MAX_OUTPUT_PORT_TYPE
+Load <= Load.DB_MAX_OUTPUT_PORT_TYPE
+Sh <= Sh.DB_MAX_OUTPUT_PORT_TYPE
+Ad <= Ad.DB_MAX_OUTPUT_PORT_TYPE
+Clk => state~2.DATAIN
+St => Selector1.IN3
+St => Load.DATAB
+St => Selector0.IN2
+M => Ad.DATAB
+K => state.DATAB
+K => Selector1.IN1
+
+
