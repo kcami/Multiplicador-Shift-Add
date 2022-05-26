@@ -52,19 +52,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "OperandoMultiplicador[0]",
+					"name" : "Multiplicador[0]",
 					"strict" : false
 				},
 				{
-					"name" : "OperandoMultiplicador[1]",
+					"name" : "Multiplicador[1]",
 					"strict" : false
 				},
 				{
-					"name" : "OperandoMultiplicador[2]",
+					"name" : "Multiplicador[2]",
 					"strict" : false
 				},
 				{
-					"name" : "OperandoMultiplicador[3]",
+					"name" : "Multiplicador[3]",
 					"strict" : false
 				},
 				{

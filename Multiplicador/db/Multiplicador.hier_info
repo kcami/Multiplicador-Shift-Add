@@ -5,10 +5,10 @@ Multiplicando[0] => Multiplicando[0].IN1
 Multiplicando[1] => Multiplicando[1].IN1
 Multiplicando[2] => Multiplicando[2].IN1
 Multiplicando[3] => Multiplicando[3].IN1
-OperandoMultiplicador[0] => OperandoMultiplicador[0].IN1
-OperandoMultiplicador[1] => OperandoMultiplicador[1].IN1
-OperandoMultiplicador[2] => OperandoMultiplicador[2].IN1
-OperandoMultiplicador[3] => OperandoMultiplicador[3].IN1
+Multiplicador[0] => Multiplicador[0].IN1
+Multiplicador[1] => Multiplicador[1].IN1
+Multiplicador[2] => Multiplicador[2].IN1
+Multiplicador[3] => Multiplicador[3].IN1
 Idle << Control:CON0.Idle
 Done << Control:CON0.Done
 Produto[0] << Produto[0].DB_MAX_OUTPUT_PORT_TYPE

@@ -18,4 +18,4 @@ module Counter(Load, Clk, K);
 		end
 	end
 
-endmodule
+endmodule 

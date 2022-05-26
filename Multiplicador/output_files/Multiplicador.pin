@@ -1,6 +1,6 @@
- -- Copyright (C) 2020  Intel Corporation. All rights reserved.
+ -- Copyright (C) 2018  Intel Corporation. All rights reserved.
  -- Your use of Intel Corporation's design tools, logic functions 
- -- and other software and tools, and any partner logic 
+ -- and other software and tools, and its AMPP partner logic 
  -- functions, and any output files from any of the foregoing 
  -- (including device programming or simulation files), and any 
  -- associated documentation or information are expressly subject 
@@ -10,8 +10,7 @@
  -- agreement, including, without limitation, that your use is for
  -- the sole purpose of programming logic devices manufactured by
  -- Intel and sold by Intel or its authorized distributors.  Please
- -- refer to the applicable agreement for further details, at
- -- https://fpgasoftware.intel.com/eula.
+ -- refer to the applicable agreement for further details.
  -- 
  -- This is a Quartus Prime output file. It is for reporting purposes only, and is
  -- not intended for use as a Quartus Prime input file. This file cannot be used
@@ -65,7 +64,7 @@
  -- Pin directions (input, output or bidir) are based on device operating in user mode.
  ---------------------------------------------------------------------------------
 
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 CHIP  "Multiplicador"  ASSIGNED TO AN: 10M50DAF484C7G
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
@@ -73,7 +72,7 @@ Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage 
 GND                          : A1        : gnd    :                   :         :           :                
 Multiplicando[2]             : A2        : input  : 2.5 V             :         : 8         : N              
 Multiplicando[0]             : A3        : input  : 2.5 V             :         : 8         : N              
-OperandoMultiplicador[1]     : A4        : input  : 2.5 V             :         : 8         : N              
+Multiplicador[1]             : A4        : input  : 2.5 V             :         : 8         : N              
 St                           : A5        : input  : 2.5 V             :         : 8         : N              
 Produto[2]                   : A6        : output : 2.5 V             :         : 8         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : A7        :        :                   :         : 7         :                
@@ -142,7 +141,7 @@ Produto[5]                   : B3        : output : 2.5 V             :         
 Multiplicando[1]             : B4        : input  : 2.5 V             :         : 8         : N              
 Produto[6]                   : B5        : output : 2.5 V             :         : 8         : N              
 GND                          : B6        : gnd    :                   :         :           :                
-OperandoMultiplicador[3]     : B7        : input  : 2.5 V             :         : 8         : N              
+Multiplicador[3]             : B7        : input  : 2.5 V             :         : 8         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : B8        :        :                   :         : 7         :                
 GND                          : B9        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B10       :        :                   :         : 7         :                
@@ -187,8 +186,8 @@ GND                          : D4        : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : D5        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D6        :        :                   :         : 8         :                
 Produto[4]                   : D7        : output : 2.5 V             :         : 8         : N              
-OperandoMultiplicador[0]     : D8        : input  : 2.5 V             :         : 8         : N              
-OperandoMultiplicador[2]     : D9        : input  : 2.5 V             :         : 8         : N              
+Multiplicador[0]             : D8        : input  : 2.5 V             :         : 8         : N              
+Multiplicador[2]             : D9        : input  : 2.5 V             :         : 8         : N              
 Idle                         : D10       : output : 2.5 V             :         : 8         : N              
 GND                          : D11       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D12       :        :                   :         : 7         :                

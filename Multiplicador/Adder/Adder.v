@@ -5,4 +5,4 @@ module Adder (Soma, OperandoA, OperandoB);
 
 	assign Soma = OperandoA + OperandoB;
 
-endmodule
+endmodule 

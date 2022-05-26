@@ -2,7 +2,7 @@ module Multiplicador (
 	input St, 
 	input Clk,
 	input [3:0] Multiplicando, 
-	input [3:0] OperandoMultiplicador,
+	input [3:0] Multiplicador,
 	output Idle, Done, 
 	output [7:0] Produto
 );
@@ -14,7 +14,7 @@ module Multiplicador (
 				 .Sh(Sh),
 				 .Ad(Ad), 
 				 .Clk(Clk), 
-				 .Entradas({Soma[4:0], OperandoMultiplicador[3:0]})
+				 .Entradas({Soma[4:0], Multiplicador[3:0]})
 				); //{} concatena vetores
 				
 	Adder ADD0 (.Soma(Soma), 
@@ -37,4 +37,4 @@ module Multiplicador (
 					  .M(Produto[0]), 
 					  .K(K)
 					 );
-endmodule
+endmodule 

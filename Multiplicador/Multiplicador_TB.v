@@ -3,7 +3,7 @@ module Multiplicador_TB();
 
 	reg Clk;
 	reg [3:0] Multiplicando;
-	reg [3:0] OperandoMultiplicador;
+	reg [3:0] Multiplicador;
 	reg St;
 	
 	wire Done;
@@ -14,7 +14,7 @@ module Multiplicador_TB();
 		.St(St),
 		.Clk(Clk),
 		.Multiplicando(Multiplicando),
-		.OperandoMultiplicador(OperandoMultiplicador),
+		.Multiplicador(Multiplicador),
 		.Idle(Idle),
 		.Done(Done),
 		.Produto(Produto)
@@ -26,16 +26,19 @@ module Multiplicador_TB();
 	
 	initial begin
 		Clk = 1;
-		St  = 1;
-		OperandoMultiplicador = 4'b1011;
+		St  = 0;
+		Multiplicador = 4'b1011;
 		Multiplicando = 4'b1101;
+		#20;
+		St = 1;
 		#80;
 		St = 0;
 		
 		#1000;
-		St  = 1;
-		OperandoMultiplicador = 4'b1111;
+		Multiplicador = 4'b1111;
 		Multiplicando = 4'b1111;
+		#30;
+		St = 1;
 		#80;
 		St = 0;
 		
@@ -43,6 +46,6 @@ module Multiplicador_TB();
 	end
 	
 	initial begin
-		#2400 $stop;
+		#3000 $stop;
 	end                                                   
-endmodule
+endmodule 

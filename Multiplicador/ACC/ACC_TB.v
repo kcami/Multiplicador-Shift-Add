@@ -1,18 +1,15 @@
 `timescale 1ns/100ps
 module ACC_TB();
 
-	// test vector input registers
 	reg Clk;
 	reg [8:0] Entradas;
 	reg Load;
 	reg Sh;
 	reg Ad;
-	// wires                                               
+	
 	wire [8:0] Produto;
-
-	// assign statements (if any)                          
-	ACC DUT (
-	// port map - connection between master ports and signals/registers   
+                         
+	ACC DUT (  
 		.Clk(Clk),
 		.Entradas(Entradas),
 		.Load(Load),

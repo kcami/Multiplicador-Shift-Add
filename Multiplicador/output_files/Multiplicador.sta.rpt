@@ -1,6 +1,6 @@
 Timing Analyzer report for Multiplicador
-Wed May 25 21:22:22 2022
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Wed May 25 23:45:01 2022
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
@@ -54,9 +54,9 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2018  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -66,15 +66,14 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+refer to the applicable agreement for further details.
 
 
 
 +-----------------------------------------------------------------------------+
 ; Timing Analyzer Summary                                                     ;
 +-----------------------+-----------------------------------------------------+
-; Quartus Prime Version ; Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Quartus Prime Version ; Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Timing Analyzer       ; Legacy Timing Analyzer                              ;
 ; Revision Name         ; Multiplicador                                       ;
 ; Device Family         ; MAX 10                                              ;
@@ -90,15 +89,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.01        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.5%      ;
+;     Processor 2            ;   1.2%      ;
 +----------------------------+-------------+
 
 
@@ -107,7 +106,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+--------+--------------------------+
 ; SDC File Path     ; Status ; Read at                  ;
 +-------------------+--------+--------------------------+
-; Multiplicador.sdc ; OK     ; Wed May 25 21:22:19 2022 ;
+; Multiplicador.sdc ; OK     ; Wed May 25 23:44:57 2022 ;
 +-------------------+--------+--------------------------+
 
 
@@ -306,29 +305,29 @@ No synchronizer chains to report.
 +--------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Input Transition Times                                                               ;
-+--------------------------+-----------------------+-----------------+-----------------+
-; Pin                      ; I/O Standard          ; 10-90 Rise Time ; 90-10 Fall Time ;
-+--------------------------+-----------------------+-----------------+-----------------+
-; St                       ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
-; Clk                      ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
-; OperandoMultiplicador[0] ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
-; OperandoMultiplicador[1] ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
-; OperandoMultiplicador[2] ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
-; OperandoMultiplicador[3] ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
-; Multiplicando[0]         ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
-; Multiplicando[1]         ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
-; Multiplicando[2]         ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
-; Multiplicando[3]         ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
-; ~ALTERA_TMS~             ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
-; ~ALTERA_TCK~             ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
-; ~ALTERA_TDI~             ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
-; ~ALTERA_CONFIG_SEL~      ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
-; ~ALTERA_nCONFIG~         ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
-; ~ALTERA_nSTATUS~         ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
-; ~ALTERA_CONF_DONE~       ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
-+--------------------------+-----------------------+-----------------+-----------------+
++---------------------------------------------------------------------------------+
+; Input Transition Times                                                          ;
++---------------------+-----------------------+-----------------+-----------------+
+; Pin                 ; I/O Standard          ; 10-90 Rise Time ; 90-10 Fall Time ;
++---------------------+-----------------------+-----------------+-----------------+
+; St                  ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; Clk                 ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; Multiplicador[0]    ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; Multiplicador[1]    ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; Multiplicador[2]    ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; Multiplicador[3]    ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; Multiplicando[0]    ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; Multiplicando[1]    ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; Multiplicando[2]    ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; Multiplicando[3]    ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_TMS~        ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_TCK~        ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_TDI~        ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_CONFIG_SEL~ ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_nCONFIG~    ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_nSTATUS~    ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_CONF_DONE~  ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
++---------------------+-----------------------+-----------------+-----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -380,7 +379,7 @@ No synchronizer chains to report.
 ; Produto[1]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.94e-08 V                   ; 2.78 V              ; -0.0444 V           ; 0.25 V                               ; 0.107 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.94e-08 V                  ; 2.78 V             ; -0.0444 V          ; 0.25 V                              ; 0.107 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
 ; Produto[2]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.95e-08 V                   ; 2.78 V              ; -0.0452 V           ; 0.248 V                              ; 0.108 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.95e-08 V                  ; 2.78 V             ; -0.0452 V          ; 0.248 V                             ; 0.108 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
 ; Produto[3]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.95e-08 V                   ; 2.78 V              ; -0.0452 V           ; 0.248 V                              ; 0.108 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.95e-08 V                  ; 2.78 V             ; -0.0452 V          ; 0.248 V                             ; 0.108 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
-; Produto[4]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.95e-08 V                   ; 2.64 V              ; -0.00888 V          ; 0.249 V                              ; 0.203 V                              ; 3.12e-09 s                  ; 3.02e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.95e-08 V                  ; 2.64 V             ; -0.00888 V         ; 0.249 V                             ; 0.203 V                             ; 3.12e-09 s                 ; 3.02e-09 s                 ; No                        ; Yes                       ;
+; Produto[4]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.95e-08 V                   ; 2.64 V              ; -0.00893 V          ; 0.249 V                              ; 0.203 V                              ; 3.12e-09 s                  ; 3.02e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.95e-08 V                  ; 2.64 V             ; -0.00893 V         ; 0.249 V                             ; 0.203 V                             ; 3.12e-09 s                 ; 3.02e-09 s                 ; No                        ; Yes                       ;
 ; Produto[5]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.94e-08 V                   ; 2.78 V              ; -0.0444 V           ; 0.25 V                               ; 0.107 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.94e-08 V                  ; 2.78 V             ; -0.0444 V          ; 0.25 V                              ; 0.107 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
 ; Produto[6]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.94e-08 V                   ; 2.78 V              ; -0.0444 V           ; 0.25 V                               ; 0.107 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.94e-08 V                  ; 2.78 V             ; -0.0444 V          ; 0.25 V                              ; 0.107 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
 ; Produto[7]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.95e-08 V                   ; 2.78 V              ; -0.0452 V           ; 0.248 V                              ; 0.108 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.95e-08 V                  ; 2.78 V             ; -0.0452 V          ; 0.248 V                             ; 0.108 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
@@ -443,21 +442,21 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +--------+-------+------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Unconstrained Input Ports                                                                                       ;
-+--------------------------+--------------------------------------------------------------------------------------+
-; Input Port               ; Comment                                                                              ;
-+--------------------------+--------------------------------------------------------------------------------------+
-; Multiplicando[0]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Multiplicando[1]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Multiplicando[2]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Multiplicando[3]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; OperandoMultiplicador[0] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; OperandoMultiplicador[1] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; OperandoMultiplicador[2] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; OperandoMultiplicador[3] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; St                       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+--------------------------+--------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                               ;
++------------------+--------------------------------------------------------------------------------------+
+; Input Port       ; Comment                                                                              ;
++------------------+--------------------------------------------------------------------------------------+
+; Multiplicador[0] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Multiplicador[1] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Multiplicador[2] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Multiplicador[3] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Multiplicando[0] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Multiplicando[1] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Multiplicando[2] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Multiplicando[3] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; St               ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------------+--------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------+
@@ -478,21 +477,21 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Unconstrained Input Ports                                                                                       ;
-+--------------------------+--------------------------------------------------------------------------------------+
-; Input Port               ; Comment                                                                              ;
-+--------------------------+--------------------------------------------------------------------------------------+
-; Multiplicando[0]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Multiplicando[1]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Multiplicando[2]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Multiplicando[3]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; OperandoMultiplicador[0] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; OperandoMultiplicador[1] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; OperandoMultiplicador[2] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; OperandoMultiplicador[3] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; St                       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+--------------------------+--------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                               ;
++------------------+--------------------------------------------------------------------------------------+
+; Input Port       ; Comment                                                                              ;
++------------------+--------------------------------------------------------------------------------------+
+; Multiplicador[0] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Multiplicador[1] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Multiplicador[2] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Multiplicador[3] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Multiplicando[0] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Multiplicando[1] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Multiplicando[2] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Multiplicando[3] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; St               ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------------+--------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------+
@@ -518,12 +517,12 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +--------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed May 25 21:22:18 2022
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Wed May 25 23:44:53 2022
 Info: Command: quartus_sta Multiplicador -c Multiplicador
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Info (332104): Reading SDC File: 'Multiplicador.sdc'
@@ -582,9 +581,9 @@ Info (332146): Worst-case minimum pulse width slack is -1.000
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4818 megabytes
-    Info: Processing ended: Wed May 25 21:22:22 2022
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 4789 megabytes
+    Info: Processing ended: Wed May 25 23:45:01 2022
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:08
 
 

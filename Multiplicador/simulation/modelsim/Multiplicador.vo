@@ -1,6 +1,6 @@
-// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
 // Your use of Intel Corporation's design tools, logic functions 
-// and other software and tools, and any partner logic 
+// and other software and tools, and its AMPP partner logic 
 // functions, and any output files from any of the foregoing 
 // (including device programming or simulation files), and any 
 // associated documentation or information are expressly subject 
@@ -10,14 +10,13 @@
 // agreement, including, without limitation, that your use is for
 // the sole purpose of programming logic devices manufactured by
 // Intel and sold by Intel or its authorized distributors.  Please
-// refer to the applicable agreement for further details, at
-// https://fpgasoftware.intel.com/eula.
+// refer to the applicable agreement for further details.
 
 // VENDOR "Altera"
 // PROGRAM "Quartus Prime"
-// VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
+// VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "05/25/2022 21:22:24"
+// DATE "05/25/2022 23:45:06"
 
 // 
 // Device: Altera 10M50DAF484C7G Package FBGA484
@@ -33,14 +32,14 @@ module Multiplicador (
 	St,
 	Clk,
 	Multiplicando,
-	OperandoMultiplicador,
+	Multiplicador,
 	Idle,
 	Done,
 	Produto);
 input 	St;
 input 	Clk;
 input 	[3:0] Multiplicando;
-input 	[3:0] OperandoMultiplicador;
+input 	[3:0] Multiplicador;
 output 	Idle;
 output 	Done;
 output 	[7:0] Produto;
@@ -58,10 +57,10 @@ output 	[7:0] Produto;
 // Produto[7]	=>  Location: PIN_F7,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // St	=>  Location: PIN_A5,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // Clk	=>  Location: PIN_M8,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// OperandoMultiplicador[0]	=>  Location: PIN_D8,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// OperandoMultiplicador[1]	=>  Location: PIN_A4,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// OperandoMultiplicador[2]	=>  Location: PIN_D9,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// OperandoMultiplicador[3]	=>  Location: PIN_B7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Multiplicador[0]	=>  Location: PIN_D8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Multiplicador[1]	=>  Location: PIN_A4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Multiplicador[2]	=>  Location: PIN_D9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Multiplicador[3]	=>  Location: PIN_B7,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // Multiplicando[0]	=>  Location: PIN_A3,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // Multiplicando[1]	=>  Location: PIN_B4,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // Multiplicando[2]	=>  Location: PIN_A2,	 I/O Standard: 2.5 V,	 Current Strength: Default
@@ -111,8 +110,8 @@ wire \CON0|state~10_combout ;
 wire \CON0|state.S3~q ;
 wire \CON0|Selector0~0_combout ;
 wire \CON0|state.S0~q ;
-wire \OperandoMultiplicador[1]~input_o ;
-wire \OperandoMultiplicador[3]~input_o ;
+wire \Multiplicador[1]~input_o ;
+wire \Multiplicador[3]~input_o ;
 wire \Multiplicando[0]~input_o ;
 wire \ADD0|Soma[0]~0_combout ;
 wire \Multiplicando[2]~input_o ;
@@ -137,10 +136,10 @@ wire \ACC0|Saidas~8_combout ;
 wire \ACC0|Saidas~6_combout ;
 wire \ACC0|Saidas~4_combout ;
 wire \ACC0|Saidas[0]~1_combout ;
-wire \OperandoMultiplicador[2]~input_o ;
+wire \Multiplicador[2]~input_o ;
 wire \ACC0|Saidas~3_combout ;
 wire \ACC0|Saidas~2_combout ;
-wire \OperandoMultiplicador[0]~input_o ;
+wire \Multiplicador[0]~input_o ;
 wire \ACC0|Saidas~0_combout ;
 wire [8:0] \ACC0|Saidas ;
 wire [3:0] \COUNT0|n ;
@@ -675,27 +674,27 @@ defparam \CON0|state.S0 .power_up = "low";
 // synopsys translate_on
 
 // Location: IOIBUF_X31_Y39_N22
-fiftyfivenm_io_ibuf \OperandoMultiplicador[1]~input (
-	.i(OperandoMultiplicador[1]),
+fiftyfivenm_io_ibuf \Multiplicador[1]~input (
+	.i(Multiplicador[1]),
 	.ibar(gnd),
 	.nsleep(vcc),
-	.o(\OperandoMultiplicador[1]~input_o ));
+	.o(\Multiplicador[1]~input_o ));
 // synopsys translate_off
-defparam \OperandoMultiplicador[1]~input .bus_hold = "false";
-defparam \OperandoMultiplicador[1]~input .listen_to_nsleep_signal = "false";
-defparam \OperandoMultiplicador[1]~input .simulate_z_as = "z";
+defparam \Multiplicador[1]~input .bus_hold = "false";
+defparam \Multiplicador[1]~input .listen_to_nsleep_signal = "false";
+defparam \Multiplicador[1]~input .simulate_z_as = "z";
 // synopsys translate_on
 
 // Location: IOIBUF_X34_Y39_N22
-fiftyfivenm_io_ibuf \OperandoMultiplicador[3]~input (
-	.i(OperandoMultiplicador[3]),
+fiftyfivenm_io_ibuf \Multiplicador[3]~input (
+	.i(Multiplicador[3]),
 	.ibar(gnd),
 	.nsleep(vcc),
-	.o(\OperandoMultiplicador[3]~input_o ));
+	.o(\Multiplicador[3]~input_o ));
 // synopsys translate_off
-defparam \OperandoMultiplicador[3]~input .bus_hold = "false";
-defparam \OperandoMultiplicador[3]~input .listen_to_nsleep_signal = "false";
-defparam \OperandoMultiplicador[3]~input .simulate_z_as = "z";
+defparam \Multiplicador[3]~input .bus_hold = "false";
+defparam \Multiplicador[3]~input .listen_to_nsleep_signal = "false";
+defparam \Multiplicador[3]~input .simulate_z_as = "z";
 // synopsys translate_on
 
 // Location: IOIBUF_X26_Y39_N8
@@ -1088,9 +1087,9 @@ defparam \ACC0|Saidas[4] .power_up = "low";
 // Location: LCCOMB_X31_Y35_N4
 fiftyfivenm_lcell_comb \ACC0|Saidas~4 (
 // Equation(s):
-// \ACC0|Saidas~4_combout  = (\CON0|state.S2~q  & ((\ACC0|Saidas [4]))) # (!\CON0|state.S2~q  & (\OperandoMultiplicador[3]~input_o ))
+// \ACC0|Saidas~4_combout  = (\CON0|state.S2~q  & ((\ACC0|Saidas [4]))) # (!\CON0|state.S2~q  & (\Multiplicador[3]~input_o ))
 
-	.dataa(\OperandoMultiplicador[3]~input_o ),
+	.dataa(\Multiplicador[3]~input_o ),
 	.datab(gnd),
 	.datac(\ACC0|Saidas [4]),
 	.datad(\CON0|state.S2~q ),
@@ -1139,26 +1138,26 @@ defparam \ACC0|Saidas[3] .power_up = "low";
 // synopsys translate_on
 
 // Location: IOIBUF_X31_Y39_N8
-fiftyfivenm_io_ibuf \OperandoMultiplicador[2]~input (
-	.i(OperandoMultiplicador[2]),
+fiftyfivenm_io_ibuf \Multiplicador[2]~input (
+	.i(Multiplicador[2]),
 	.ibar(gnd),
 	.nsleep(vcc),
-	.o(\OperandoMultiplicador[2]~input_o ));
+	.o(\Multiplicador[2]~input_o ));
 // synopsys translate_off
-defparam \OperandoMultiplicador[2]~input .bus_hold = "false";
-defparam \OperandoMultiplicador[2]~input .listen_to_nsleep_signal = "false";
-defparam \OperandoMultiplicador[2]~input .simulate_z_as = "z";
+defparam \Multiplicador[2]~input .bus_hold = "false";
+defparam \Multiplicador[2]~input .listen_to_nsleep_signal = "false";
+defparam \Multiplicador[2]~input .simulate_z_as = "z";
 // synopsys translate_on
 
 // Location: LCCOMB_X31_Y35_N6
 fiftyfivenm_lcell_comb \ACC0|Saidas~3 (
 // Equation(s):
-// \ACC0|Saidas~3_combout  = (\CON0|state.S2~q  & (\ACC0|Saidas [3])) # (!\CON0|state.S2~q  & ((\OperandoMultiplicador[2]~input_o )))
+// \ACC0|Saidas~3_combout  = (\CON0|state.S2~q  & (\ACC0|Saidas [3])) # (!\CON0|state.S2~q  & ((\Multiplicador[2]~input_o )))
 
 	.dataa(\CON0|state.S2~q ),
 	.datab(gnd),
 	.datac(\ACC0|Saidas [3]),
-	.datad(\OperandoMultiplicador[2]~input_o ),
+	.datad(\Multiplicador[2]~input_o ),
 	.cin(gnd),
 	.combout(\ACC0|Saidas~3_combout ),
 	.cout());
@@ -1189,11 +1188,11 @@ defparam \ACC0|Saidas[2] .power_up = "low";
 // Location: LCCOMB_X31_Y35_N8
 fiftyfivenm_lcell_comb \ACC0|Saidas~2 (
 // Equation(s):
-// \ACC0|Saidas~2_combout  = (\CON0|state.S2~q  & ((\ACC0|Saidas [2]))) # (!\CON0|state.S2~q  & (\OperandoMultiplicador[1]~input_o ))
+// \ACC0|Saidas~2_combout  = (\CON0|state.S2~q  & ((\ACC0|Saidas [2]))) # (!\CON0|state.S2~q  & (\Multiplicador[1]~input_o ))
 
 	.dataa(\CON0|state.S2~q ),
 	.datab(gnd),
-	.datac(\OperandoMultiplicador[1]~input_o ),
+	.datac(\Multiplicador[1]~input_o ),
 	.datad(\ACC0|Saidas [2]),
 	.cin(gnd),
 	.combout(\ACC0|Saidas~2_combout ),
@@ -1223,26 +1222,26 @@ defparam \ACC0|Saidas[1] .power_up = "low";
 // synopsys translate_on
 
 // Location: IOIBUF_X31_Y39_N1
-fiftyfivenm_io_ibuf \OperandoMultiplicador[0]~input (
-	.i(OperandoMultiplicador[0]),
+fiftyfivenm_io_ibuf \Multiplicador[0]~input (
+	.i(Multiplicador[0]),
 	.ibar(gnd),
 	.nsleep(vcc),
-	.o(\OperandoMultiplicador[0]~input_o ));
+	.o(\Multiplicador[0]~input_o ));
 // synopsys translate_off
-defparam \OperandoMultiplicador[0]~input .bus_hold = "false";
-defparam \OperandoMultiplicador[0]~input .listen_to_nsleep_signal = "false";
-defparam \OperandoMultiplicador[0]~input .simulate_z_as = "z";
+defparam \Multiplicador[0]~input .bus_hold = "false";
+defparam \Multiplicador[0]~input .listen_to_nsleep_signal = "false";
+defparam \Multiplicador[0]~input .simulate_z_as = "z";
 // synopsys translate_on
 
 // Location: LCCOMB_X31_Y35_N30
 fiftyfivenm_lcell_comb \ACC0|Saidas~0 (
 // Equation(s):
-// \ACC0|Saidas~0_combout  = (\CON0|state.S2~q  & (\ACC0|Saidas [1])) # (!\CON0|state.S2~q  & ((\OperandoMultiplicador[0]~input_o )))
+// \ACC0|Saidas~0_combout  = (\CON0|state.S2~q  & (\ACC0|Saidas [1])) # (!\CON0|state.S2~q  & ((\Multiplicador[0]~input_o )))
 
 	.dataa(\CON0|state.S2~q ),
 	.datab(gnd),
 	.datac(\ACC0|Saidas [1]),
-	.datad(\OperandoMultiplicador[0]~input_o ),
+	.datad(\Multiplicador[0]~input_o ),
 	.cin(gnd),
 	.combout(\ACC0|Saidas~0_combout ),
 	.cout());
@@ -1293,9 +1292,7 @@ fiftyfivenm_unvm \~QUARTUS_CREATED_UNVM~ (
 // synopsys translate_off
 defparam \~QUARTUS_CREATED_UNVM~ .addr_range1_end_addr = -1;
 defparam \~QUARTUS_CREATED_UNVM~ .addr_range1_offset = -1;
-defparam \~QUARTUS_CREATED_UNVM~ .addr_range2_end_addr = -1;
 defparam \~QUARTUS_CREATED_UNVM~ .addr_range2_offset = -1;
-defparam \~QUARTUS_CREATED_UNVM~ .addr_range3_offset = -1;
 defparam \~QUARTUS_CREATED_UNVM~ .is_compressed_image = "false";
 defparam \~QUARTUS_CREATED_UNVM~ .is_dual_boot = "false";
 defparam \~QUARTUS_CREATED_UNVM~ .is_eram_skip = "false";
