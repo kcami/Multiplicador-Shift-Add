@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ysmai/Desktop/Multiplicador-Shift-Add/Multiplicador/Control/simulation/modelsim
+vControl
+Z1 !s110 1653528758
+!i10b 1
+!s100 FY9UCzIie_86BJ8G[TiVJ3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I7IBE9IObThVZXAbE0A^322
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1653524931
+8C:/Users/ysmai/Desktop/Multiplicador-Shift-Add/Multiplicador/Control/Control.v
+FC:/Users/ysmai/Desktop/Multiplicador-Shift-Add/Multiplicador/Control/Control.v
+!i122 0
+L0 1 85
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1653528757.000000
+!s107 C:/Users/ysmai/Desktop/Multiplicador-Shift-Add/Multiplicador/Control/Control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ysmai/Desktop/Multiplicador-Shift-Add/Multiplicador/Control|C:/Users/ysmai/Desktop/Multiplicador-Shift-Add/Multiplicador/Control/Control.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/ysmai/Desktop/Multiplicador-Shift-Add/Multiplicador/Control
+Z7 tCvgOpt 0
+n@control
+vControl_TB
+R1
+!i10b 1
+!s100 n@6CX91g5KAdiF0=]B1kA0
+R2
+IRXONg_`iJnd9X=AUo<`VD0
+R3
+R0
+w1653523481
+8C:/Users/ysmai/Desktop/Multiplicador-Shift-Add/Multiplicador/Control/Control_TB.v
+FC:/Users/ysmai/Desktop/Multiplicador-Shift-Add/Multiplicador/Control/Control_TB.v
+!i122 1
+L0 2 91
+R4
+r1
+!s85 0
+31
+!s108 1653528758.000000
+!s107 C:/Users/ysmai/Desktop/Multiplicador-Shift-Add/Multiplicador/Control/Control_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ysmai/Desktop/Multiplicador-Shift-Add/Multiplicador/Control|C:/Users/ysmai/Desktop/Multiplicador-Shift-Add/Multiplicador/Control/Control_TB.v|
+!i113 1
+R5
+R6
+R7
+n@control_@t@b

@@ -1,0 +1,40 @@
+# Current time Wed May 25 21:21:12 2022
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vish
+# Id = "2020.1"
+# Version = "2020.02"
+# Date = "Feb 28 2020"
+# Platform = win32pe
+
+Exception c0000005 has occurred at address 00764b75. Traceback:
+# Current time Wed May 25 21:21:37 2022
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vish
+# Id = "2020.1"
+# Version = "2020.02"
+# Date = "Feb 28 2020"
+# Platform = win32pe
+
+Exception c0000005 has occurred at address 00764b75. Traceback:
+# 0    0x00764b75: '<unknown (@0x764b75)>'
+# 1    0x00764539: '<unknown (@0x764539)>'
+# 2    0x0076784c: '<unknown (@0x76784c)>'
+# 3    0x007665b5: '<unknown (@0x7665b5)>'
+# 4    0x007646be: '<unknown (@0x7646be)>'
+# 5    0x0067cd1d: '<unknown (@0x67cd1d)>'
+# 6    0x004f72f9: '<unknown (@0x4f72f9)>'
+# 7    0x72e91fae: '<unknown (@0x72e91fae)>'
+# 8    0x72e939f1: '<unknown (@0x72e939f1)>'
+# 9    0x72e93a49: '<unknown (@0x72e93a49)>'
+# 10   0x72e9563c: '<unknown (@0x72e9563c)>'
+# 11   0x734e0400: '<unknown (@0x734e0400)>'
+# 12   0x14c54830: '<unknown (@0x14c54830)>'
+# 13   0xcccccccc: '<unknown (@0xcccccccc)>'
+# 14   0x0264e874: '<unknown (@0x264e874)>'
+# 15   0x0264baec: '<unknown (@0x264baec)>'
+# 16   0x72e939f1: '<unknown (@0x72e939f1)>'
+# 17   0x72e93a49: '<unknown (@0x72e93a49)>'
+# 18   0x72e94ef9: '<unknown (@0x72e94ef9)>'
+# 19   0x72e96384: '<unknown (@0x72e96384)>'
+# 20   0x004f88ac: '<unknown (@0x4f88ac)>'
+# 21   0x004f9337: '<unknown (@0x4f9337)>'
