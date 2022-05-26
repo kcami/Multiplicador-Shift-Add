@@ -22,11 +22,6 @@ module Control (Idle, Done, Load, Sh, Ad, Clk, St, M, K);
 						state <= S0;
 					end
 			S1:
-				if (M)
-					begin
-						state <= S2;
-					end
-				else
 					begin
 						state <= S2;
 					end
@@ -40,6 +35,10 @@ module Control (Idle, Done, Load, Sh, Ad, Clk, St, M, K);
 						state <= S1;
 					end
 			S3:
+					begin
+						state <= S0;
+					end
+			default:
 					begin
 						state <= S0;
 					end
