@@ -25,7 +25,7 @@ Control DUT (
 	.St(St)
 );
 
-integer i,j,k;
+integer i = 0,j = 0,k = 0;
 
 initial begin
 	forever #1 Clk = ~Clk;
